@@ -1,0 +1,28 @@
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime"],
+input[type="datetime-local"],
+select,
+textarea {
+  border: 1px solid $text-color;
+  box-shadow: none;
+  box-sizing: border-box;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0 0 1em;
+  max-width: 500px;
+  padding: 0.5em;
+}
+
+textarea {
+  height: 10em;
+}

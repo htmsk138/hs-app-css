@@ -1,0 +1,21 @@
+{
+  "name": "hs-app-css",
+  "version": "1.0.0",
+  "description": "Base CSS for apps",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "node-sass src/main.scss dist/hs-app.css --watch",
+    "compile-sass": "node-sass src/main.scss dist/hs-app.css",
+    "prefix-css": "postcss --use autoprefixer -b \"last 2 versions\" dist/hs-app.css -o dist/hs-app.css",
+    "compress-css": "node-sass dist/hs-app.css dist/hs-app.min.css --output-style compressed",
+    "build": "npm run compile-sass & npm run prefix-css & npm run compress-css"
+  },
+  "author": "Hitomi Seki (https://hitomiseki.com)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "node-sass": "^5.0",
+    "postcss-cli": "^8.3.1"
+  }
+}
